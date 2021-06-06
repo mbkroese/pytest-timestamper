@@ -4,6 +4,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![PyPI version](https://badge.fury.io/py/pytest-timestamper.svg)](https://pypi.python.org/pypi/pytest-timestamper/)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/pytest-timestamper.svg)](https://pypi.python.org/pypi/pytest-timestamper/)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=google&labelColor=ef8336)](https://pycqa.github.io/isort/)
 
 
 Pytest plugin to add a timestamp prefix to the pytest output.
