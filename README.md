@@ -1,6 +1,6 @@
 # pytest-timestamper
 
-[![Build Status](https://travis-ci.org/mbkroese/pytest-timestamper.svg?branch=master)](https://travis-ci.org/mbkroese/pytest-timestamper)
+[![Build Status](https://travis-ci.org/mbkroese/pytest-timestamper.svg?branch=main)](https://travis-ci.org/mbkroese/pytest-timestamper)
 
 Plugin to add a timestamp prefix to the pytest output
 
