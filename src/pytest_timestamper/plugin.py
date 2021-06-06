@@ -1,11 +1,10 @@
-from _pytest.config import Config
-from _pytest.terminal import TerminalReporter
-from typing import Optional
-from typing import TextIO
 import datetime
 import sys
-from _pytest.config.argparsing import Parser
+from typing import Optional, TextIO
 
+from _pytest.config import Config
+from _pytest.config.argparsing import Parser
+from _pytest.terminal import TerminalReporter
 import pytest
 
 

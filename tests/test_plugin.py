@@ -1,7 +1,7 @@
-import pytest
 import collections
-import freezegun
 
+import freezegun
+import pytest
 
 pytest_plugins = ["pytester"]
 
