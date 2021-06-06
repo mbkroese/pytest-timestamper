@@ -2,7 +2,23 @@
 
 ![CI Status](https://github.com/mbkroese/pytest-timestamper/actions/workflows/main.yml/badge.svg)
 
-Plugin to add a timestamp prefix to the pytest output
+Plugin to add a timestamp prefix to the pytest output.
+
+```
+➜ myproject python3 -m pytest -v
+==================================== test session starts ====================================
+platform darwin -- Python 3.9.4, pytest-6.3.0.dev494+g43faea832.d20210528, py-1.10.0, ...
+cachedir: .pytest_cache
+rootdir: /Users/mbk/git_tree/myproject
+plugins: timestamper-0.1.dev14+gaacde4a
+collected 3 items
+
+[2021-06-06 12:19:06] tests/test_one.py::test_dummy PASSED                            [ 33%]
+[2021-06-06 12:19:06] tests/test_one.py::test_dummy_two PASSED                        [ 66%]
+[2021-06-06 12:19:06] tests/test_two.py::test_another_dummy PASSED                    [100%]
+
+===================================== 3 passed in 0.02s =====================================
+```
 
 ## Motivation
 
