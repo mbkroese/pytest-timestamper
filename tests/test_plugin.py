@@ -8,21 +8,25 @@ pytest_plugins = ["pytester"]
 
 @pytest.fixture
 def example_suite(testdir):
-    testdir.makepyfile("""
+    testdir.makepyfile(
+        """
     def test_1(): pass
     def test_2(): pass
     def test_3(): pass
-    """)
+    """
+    )
     yield testdir
 
 
 @pytest.fixture
 def slow_suite(testdir):
-    testdir.makepyfile("""
+    testdir.makepyfile(
+        """
     import time
     def test_1():
         time.sleep(1.1)
-    """)
+    """
+    )
     yield testdir
 
 

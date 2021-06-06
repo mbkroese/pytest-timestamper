@@ -11,15 +11,11 @@ import pytest
 
 def pytest_addoption(parser: Parser) -> None:
     group = parser.getgroup("Adds a timestamp format to pytest output. Currently only works in verbose mode.")
-    group.addoption(
-        "--datefmt",
-        help="Format that is compatible with `strftime`",
-        default="%Y-%m-%d %H:%M:%S"
-    )
+    group.addoption("--datefmt", help="Format that is compatible with `strftime`", default="%Y-%m-%d %H:%M:%S")
     group.addoption(
         "--prefixfmt",
         help="Format for prefix. Has access to fields: ['formatted_datetime']",
-        default="[{formatted_datetime}] "
+        default="[{formatted_datetime}] ",
     )
 
 
