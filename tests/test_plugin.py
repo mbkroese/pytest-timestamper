@@ -1,5 +1,3 @@
-import collections
-
 import freezegun
 import pytest
 
