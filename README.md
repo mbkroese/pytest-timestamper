@@ -14,7 +14,7 @@ Pytest plugin to add a timestamp prefix to the pytest output.
 ==================================== test session starts ====================================
 platform darwin -- Python 3.9.4, pytest-6.3.0.dev494+g43faea832.d20210528, py-1.10.0, ...
 cachedir: .pytest_cache
-rootdir: /Users/mbk/git_tree/myproject
+rootdir: /Users/user/myproject
 plugins: timestamper-0.1.dev14+gaacde4a
 collected 3 items
 
