@@ -14,12 +14,12 @@ def pytest_addoption(parser: Parser) -> None:
     group.addoption(
         "--datefmt",
         help="Format that is compatible with `strftime`",
-        default="%Y-%m-%d %H:%M:%S"
+        default="%Y-%m-%d %H:%M:%S",
     )
     group.addoption(
         "--prefixfmt",
         help="Format for prefix. Has access to fields: ['formatted_datetime']",
-        default="[{formatted_datetime}] "
+        default="[{formatted_datetime}] ",
     )
 
 

@@ -1,10 +1,20 @@
-language: python
-python:
-  - '3.6'
-  - '3.7'
-  - '3.8'
-install:
-  - pip install -e .
-script:
-  - pip install -r requirements_test.txt
-  - pytest
+jobs:
+  include:
+    - stage: linting
+      language: python
+      python:
+        - '3.6'
+      script:
+        - pip install black
+        - black . --check -l 120
+    - stage: test
+      language: python
+      python:
+        - '3.6'
+        - '3.7'
+        - '3.8'
+      install:
+        - pip install -e .
+      script:
+        - pip install -r requirements_test.txt
+        - pytest
