@@ -17,11 +17,13 @@ jobs:
         with:
           python-version: 3.9
       - name: Install dependencies
-        run: python -m pip install black isort
-      - name: Lint check
-        run: |
-          black . --check -l 120
-          isort . --check --profile google
+        run: python -m pip install black isort flake8
+      - name: Check black
+        run: black . --check -l 120
+      - name: Check isort
+        run: isort . --check --profile google
+      - name: Check flake8
+        run: flake8
 
   tests:
     name: Python ${{ matrix.python-version }}
