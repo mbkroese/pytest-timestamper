@@ -2,6 +2,8 @@
 
 ![CI Status](https://github.com/mbkroese/pytest-timestamper/actions/workflows/main.yml/badge.svg)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![PyPI version](https://badge.fury.io/py/pytest-timestamper.svg)](https://pypi.python.org/pypi/pytest-timestamper/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/pytest-timestamper.svg)](https://pypi.python.org/pypi/pytest-timestamper/)
 
 
 Plugin to add a timestamp prefix to the pytest output.
