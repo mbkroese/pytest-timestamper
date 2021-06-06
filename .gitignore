@@ -1,0 +1,3 @@
+*.eggs
+*.egg-info
+src/pytest_timestamper/_version.py
