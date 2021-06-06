@@ -17,9 +17,11 @@ jobs:
         with:
           python-version: 3.9
       - name: Install dependencies
-        run: python -m pip install black
+        run: python -m pip install black isort
       - name: Lint check
-        run: black . --check -l 120
+        run: |
+          black . --check -l 120
+          isort . --check --profile google
 
   tests:
     name: Python ${{ matrix.python-version }}
