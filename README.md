@@ -6,7 +6,7 @@
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/pytest-timestamper.svg)](https://pypi.python.org/pypi/pytest-timestamper/)
 
 
-Plugin to add a timestamp prefix to the pytest output.
+Pytest plugin to add a timestamp prefix to the pytest output.
 
 ```
 ➜ myproject python3 -m pytest -v
