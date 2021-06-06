@@ -7,5 +7,4 @@ setuptools.setup(
     entry_points={"pytest11": ["name_of_plugin = pytest_timestamper.plugin"]},
     classifiers=["Framework :: Pytest"],
     use_scm_version={"write_to": "src/pytest_timestamper/_version.py"},
-    setup_requires=["setuptools-scm"],
 )
