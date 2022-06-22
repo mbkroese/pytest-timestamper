@@ -4,10 +4,10 @@ from typing import Optional, TextIO
 
 import pytest
 from _pytest.config import Config
-if sys.version_info[0] == 2:
-    from _pytest.config import Parser
-else:
+try:
     from _pytest.config.argparsing import Parser
+except ImportError:
+    from _pytest.config import Parser
 from _pytest.terminal import TerminalReporter
 
 
@@ -50,9 +50,8 @@ class TimestamperTerminalReporter(TerminalReporter):
 @pytest.mark.trylast
 def pytest_configure(config):
     # type: (Config) -> None
-    if sys.version_info[0] == 2:
-        config.pluginmanager.has_plugin == config.pluginmanager.hasplugin
-        config.pluginmanager.get_plugin == config.pluginmanager.getplugin
+    if not hasattr(config.pluginmanager, 'has_plugin'):
+        config.pluginmanager.has_plugin = config.pluginmanager.hasplugin
     if config.pluginmanager.has_plugin("terminalreporter"):
         reporter = config.pluginmanager.get_plugin("terminalreporter")
         config.pluginmanager.unregister(reporter, "terminalreporter")
