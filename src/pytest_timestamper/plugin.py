@@ -35,7 +35,7 @@ class TimestamperTerminalReporter(TerminalReporter):
         return self._cache[key]
 
 
-@pytest.mark.trylast
+@pytest.hookimpl(trylast=True)
 def pytest_configure(config: Config) -> None:
     if config.pluginmanager.has_plugin("terminalreporter"):
         reporter = config.pluginmanager.get_plugin("terminalreporter")
